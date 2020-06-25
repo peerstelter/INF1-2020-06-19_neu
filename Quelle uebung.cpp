@@ -126,6 +126,7 @@ bool istVorhanden(Videothek v, string name)
         if (name == v.Filme[i].Name)
         {
             vorhanden = true;
+            break;
          }
     }
 
@@ -155,12 +156,12 @@ void kundenAnfrage(Kunde& k, Videothek& v, string suche)
     }  
 }
 
-void preiseAktualisieren(Videothek& v, int n)
+void preiseAktualisieren(Videothek& v, double n)
 {
-    n = 100 + n;
+    n = (100 + n)/100;
     for (int i = 0; i < v.AnzahlFilme; i++)
     {
-        v.Filme[i].Preis = v.Filme[i].Preis / 100 * n;
+        v.Filme[i].Preis = v.Filme[i].Preis * n;
     }
 }
 

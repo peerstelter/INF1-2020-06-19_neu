@@ -45,7 +45,7 @@ int main()
 	kundenAnfrage(v.Kunde[0], v, "titanik");
 	kundenAnfrage(v.Kunde[0], v, "Wolf of Wallstreet");
 
-	preiseAktualisieren(v, -15);
+	preiseAktualisieren(v, -10);
 
 	highPreis(v);
 	minPreis(v);

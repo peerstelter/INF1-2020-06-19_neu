@@ -71,7 +71,7 @@ bool istVorhanden(Videothek v, string name);
 
 void kundenAnfrage(Kunde& k, Videothek& v, string suche);
 
-void preiseAktualisieren(Videothek& v, int n);
+void preiseAktualisieren(Videothek& v, double n);
 
 void kundeAnlegen(Videothek &v, string nachname, string vorname,int mitgliedsnummer, Mitgliedschaft mitglied);
 
