@@ -94,10 +94,10 @@ void ausgabeVideothek(Videothek v)
     cout << "\nGeöffnet: ";
     switch (v.OffenZU)
     {
-    case(0):
+    case(GESCHLOSSEN):
         cout << "Geschlossen :-( ";
         break;
-    case(1):
+    case(OFFEN):
         cout << "Geoeffnet!! Yeah!! :D";
         break;
     default:
