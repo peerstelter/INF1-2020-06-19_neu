@@ -165,24 +165,21 @@ void preiseAktualisieren(Videothek& v, double n)
     }
 }
 
-void kundeAnlegen(Videothek& v, string nachname, string vorname,int mitgliedsnummer, Mitgliedschaft mitglied)
+void kundeAnlegen(Videothek& v, string nachname, string vorname, int mitgliedsnummer, Mitgliedschaft mitglied)
 {
-    Kunde* ptr_k = &v.Kunde[v.anzahlKunden];
-    Videothek* ptr_v = &v;
-    ptr_k ->nachname = nachname;
-    ptr_k->vorname = vorname;
-    ptr_k->kundennummer = mitgliedsnummer;
-    ptr_k->mitglied = mitglied;
-    ptr_v->anzahlKunden = v.anzahlKunden + 1;
+    v.anzahlKunden += 1;
+    v.Kunde[v.anzahlKunden].nachname = nachname;
+    v.Kunde[v.anzahlKunden].vorname = vorname;
+    v.Kunde[v.anzahlKunden].kundennummer = mitgliedsnummer;
+    v.Kunde[v.anzahlKunden].mitglied = mitglied;
 }
 
 void filmAnlegen(Videothek& v, string titel, Genre genre, int laenge, double preis)
 {   
-    Videothek* ptr_v = &v;
-    Film* ptr_f = &v.Filme[v.AnzahlFilme];
-    ptr_f->Name = titel;
-    ptr_f->Genre = genre;
-    ptr_f->Laenge = laenge;
-    ptr_f->Preis = preis;
-    ptr_v->AnzahlFilme = v.AnzahlFilme + 1;
+    v.AnzahlFilme += 1;
+    v.Filme[v.AnzahlFilme].Name = titel;
+    v.Filme[v.AnzahlFilme].Genre = genre;
+    v.Filme[v.AnzahlFilme].Laenge = laenge;
+    v.Filme[v.AnzahlFilme].Preis = preis;
+    
 }
