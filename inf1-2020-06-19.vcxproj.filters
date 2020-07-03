@@ -18,12 +18,12 @@
     <ClCompile Include="inf1-2020-06-19.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="Quelle uebung.cpp">
+    <ClCompile Include="Quelle_uebung.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Header uebung.h">
+    <ClInclude Include="Header_uebung.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>

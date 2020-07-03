@@ -140,10 +140,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="inf1-2020-06-19.cpp" />
-    <ClCompile Include="Quelle uebung.cpp" />
+    <ClCompile Include="Quelle_uebung.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Header uebung.h" />
+    <ClInclude Include="Header_uebung.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
